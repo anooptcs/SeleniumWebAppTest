@@ -31,7 +31,7 @@ public class WebAppTitleTestOnFirefox {
 	
 	@Test
 	public void testGooglePageTitleInFirefox() throws Exception{
-		driver.navigate().to("http://http://18.218.151.95:8080/WebApp-1.0.0-SNAPSHOT/sample.html");
+		driver.navigate().to("http://18.218.151.95:8080/WebApp-1.0.0-SNAPSHOT/sample.html");
 		System.out.println("*********Testing inprogress On Firefox**********");
 		String strPageTitle = driver.getTitle();
 		System.out.println("Actual sample html page title is: "+strPageTitle);
