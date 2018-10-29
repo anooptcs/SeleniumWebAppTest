@@ -19,7 +19,7 @@ import java.util.List;
 public class WebAppTitleTestOnChrome {
 
 	public static RemoteWebDriver driver;
-	public static String appURL = "http://18.218.151.95:8080/DevOpsWebApp-1.0.0-SNAPSHOT/training.html";
+	public static String appURL = "http://18.216.75.61:8080/DevOpsWebApp-1.0.0-SNAPSHOT/training.html";
 	
 	@BeforeClass
 	@Parameters({ "browser" })
@@ -31,7 +31,7 @@ public class WebAppTitleTestOnChrome {
 	
 	@Test
 	public void testGooglePageTitleInChrome() throws Exception{
-		driver.navigate().to("http://18.218.151.95:8080/DevOpsWebApp-1.0.0-SNAPSHOT/training.html");
+		driver.navigate().to("http://18.216.75.61:8080/DevOpsWebApp-1.0.0-SNAPSHOT/training.html");
 		System.out.println("*********Testing inprogress On Chrome**********");
 		String actualTitle = driver.getTitle();
 		String expectedValue = "DevOps Training"; //Clients requirement
