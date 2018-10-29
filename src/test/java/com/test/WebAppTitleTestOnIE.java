@@ -19,7 +19,7 @@ import java.util.List;
 public class WebAppTitleTestOnIE {
 
 	public static RemoteWebDriver driver;
-	public static String appURL = "http://localhost:8080/WebApp-1.0.0-SNAPSHOT/sample.html";
+	public static String appURL = "http://18.191.248.129:8080/WebApp-1.0.0-SNAPSHOT/sample.html";
 	
 	@BeforeClass
 	@Parameters({ "browser" })
@@ -31,7 +31,7 @@ public class WebAppTitleTestOnIE {
 	
 	@Test
 	public void testGooglePageTitleInIE() throws Exception{
-		driver.navigate().to("http://18.218.151.95:8080/WebApp-1.0.0-SNAPSHOT/sample.html");
+		driver.navigate().to("http://18.191.248.129:8080/WebApp-1.0.0-SNAPSHOT/sample.html");
 		System.out.println("*********Testing inprogress on IE**********");
 		String strPageTitle = driver.getTitle();
 		System.out.println("Actual sample html page title is: "+strPageTitle);
